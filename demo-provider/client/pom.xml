@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>demo-provider</artifactId>
+        <groupId>priv.brick</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>demo-provider-client</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>demo-provider-client</name>
+    <url>http://maven.apache.org</url>
+</project>

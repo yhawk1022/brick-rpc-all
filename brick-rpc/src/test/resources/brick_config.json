@@ -1,0 +1,18 @@
+{
+  "serverConfig": {
+    "port":9001,
+    "services": [
+      "priv.brick.DemoServiceImpl"
+    ]
+  },
+
+  "clientConfig":{
+    "services" : [
+      {
+        "service": "priv.brick.DemoService",
+        "host" : "127.0.0.1",
+        "port" : 9001
+      }
+    ]
+  }
+}

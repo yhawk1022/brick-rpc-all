@@ -1,0 +1,18 @@
+{
+  "serverConfig": {
+    "port":9002,
+    "services": [
+      "priv.brick.service.OrderManageServiceImpl",
+      "priv.brick.service.OrderSearchServiceImpl"
+    ]
+  },
+  "clientConfig":{
+    "services" : [
+      {
+        "service": "priv.brick.DemoService",
+        "host" : "127.0.0.1",
+        "port" : 9001
+      }
+    ]
+  }
+}
