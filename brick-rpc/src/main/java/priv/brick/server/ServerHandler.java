@@ -34,7 +34,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
         try {
             Channel channel = channelHandlerContext.channel();
             if (o instanceof MessageFrame) {
-                log.info("server receive msg: [{}] ", o);
+                log.info("server receive msg: {} ", o);
                 MessageFrame requestFrame = (MessageFrame) o;
                 Request request = (Request) requestFrame.getData();
 

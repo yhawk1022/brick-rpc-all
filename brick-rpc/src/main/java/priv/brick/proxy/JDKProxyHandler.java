@@ -23,7 +23,7 @@ public class JDKProxyHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        log.info("invoked method: [{}]", method.getName());
+        log.info("invoked method: {}", method.getName());
         Request request = new Request();
         request.setRequestId(UUID.randomUUID().toString());
         request.setInterfaceName(method.getDeclaringClass().getCanonicalName());

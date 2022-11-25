@@ -69,14 +69,11 @@ public class NettyClient {
 
 
     public Object sendRequest(Request request) {
-        // build return value
         CompletableFuture<Response> resultFuture = new CompletableFuture<>();
-        // get server address
         InetSocketAddress inetSocketAddress = configDiscovery.discovery(request);
-        // get  server address related channel
         Channel channel = getChannel(inetSocketAddress);
         if (channel.isActive()) {
-            // put unprocessed request
+
             requestPool.put(request.getRequestId(), resultFuture);
             MessageFrame messageFrame = new MessageFrame();
             messageFrame.setSerializeType(SerializeSupport.Protostuff.getCode());
@@ -131,5 +128,4 @@ public class NettyClient {
     }
 
 
-    
 }

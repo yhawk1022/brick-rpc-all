@@ -17,8 +17,6 @@ public class ChannelPool {
 
     private Map<String, Channel> pool;
 
-    private static volatile ChannelPool INSTANCE;
-
     public ChannelPool(){
         pool = new ConcurrentHashMap<>();
     }
@@ -38,6 +36,5 @@ public class ChannelPool {
         String key = inetSocketAddress.toString();
         pool.put(key, channel);
     }
-
 
 }

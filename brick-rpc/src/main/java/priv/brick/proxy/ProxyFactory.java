@@ -29,7 +29,4 @@ public class ProxyFactory {
         return (T)proxy;
     }
 
-
-
-
 }
