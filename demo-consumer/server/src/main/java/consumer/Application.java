@@ -28,7 +28,7 @@ public class Application {
         System.out.println("getOrder:"+JSON.toJSONString(order));
 
         List<OrderDTO> orders = orderSearchService.listOrder(Lists.newArrayList(1l,2l,3l,4l));
-        System.out.println("li\\stOrder:"+JSON.toJSONString(orders));
+        System.out.println("listOrder:"+JSON.toJSONString(orders));
 
         OrderDTO orderDTO = new OrderDTO();
         orderDTO.setStatus(1);
